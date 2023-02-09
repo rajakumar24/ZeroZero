@@ -1,24 +1,28 @@
 import logo from './logo.svg';
+import Header from "./header/component/Header";
+import {NavBar} from './header/component/NavBar';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import './App.css';
+import GlobalPage from './GlobalPage';
 
 function App() {
+  var displaytop = "block";//isTopNavVisible ? "none" : "block";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+    <Routes>
+          <Route path="/" element={<GlobalPage/>} />
+          <Route path="/home" element={<GlobalPage />} />
+          <Route path="/product" element={<GlobalPage/>} />
+          <Route path="/productdetails" element={<GlobalPage/>} />
+    </Routes>
+    </Router>
+  </>
   );
 }
 

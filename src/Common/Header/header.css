@@ -1,0 +1,101 @@
+ .opening {
+    background-color: #FD3921;
+    color: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  .other {
+    background-color: #FD3921;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+  }
+  .headers {
+    background-color: #FD3921;
+  }
+  .content {
+    width: 365px;
+    height: 130px;
+    margin-left: 40px;
+    padding-top: 30px;
+
+    /* font-family: Breda Two; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .cartSearch {
+    width: 280px;
+    height: 130px;
+    margin-left: 40px;
+    padding-top: 30px;
+    padding-right: 40px;
+    /* font-family: Breda Two; */
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 22px;
+    line-height: 26px; */
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .navlink {
+    text-decoration: none;
+    color: #000000;
+  }
+  /* .bottom-border {
+    border-bottom: 1px solid;
+  } */
+
+  .nav {
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-item {
+    margin: 10px 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .address {
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center;
+    justify-content: start; */
+    font-size: 20px;
+    gap: 1px;
+    margin-left: 30px;
+    padding-bottom: 10px;
+  }
+  .shop {
+    width: 365px;
+    height: 50px;
+    margin-left: 40px;
+    padding-top: 40px;
+  
+    /* font-family: Breda Two; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #FD3921;
+  }
+  /* .input {
+    height: 17px !important;
+    float: left;
+    border: 2px inset #CECECE;
+    margin: 8px 0 0 7px;
+    padding: 0 0 0 5px;
+    font-size: 12px;
+    color: #454545
+  } */
