@@ -1,6 +1,3 @@
-import logo from './logo.svg';
-import Header from "./header/component/Header";
-import {NavBar} from './header/component/NavBar';
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,7 +7,6 @@ import './App.css';
 import GlobalPage from './GlobalPage';
 
 function App() {
-  var displaytop = "block";//isTopNavVisible ? "none" : "block";
 
   return (
     <>

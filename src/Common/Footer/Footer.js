@@ -1,16 +1,5 @@
-import {
-    Box,
-    Select,
-    FormControl,
-    MenuItem,
-    AppBar,
-    Toolbar,
-    Container,
-  } from "@mui/material";
-  
-  import React, { useContext,useEffect } from "react";
-  import { NavLink, useNavigate } from "react-router-dom";
-  import './footer.css';
+import React from "react";
+import './footer.css';
   
   
   const Footer = (props) => {

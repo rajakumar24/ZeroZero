@@ -1,15 +1,4 @@
-
-import {
-  Box,
-  Select,
-  FormControl,
-  MenuItem,
-  AppBar,
-  Toolbar,
-  Container,
-} from "@mui/material";
-
-import React, { useContext,useEffect } from "react";
+import React from "react";
 
 const ProductDetails = (props) => {
 
