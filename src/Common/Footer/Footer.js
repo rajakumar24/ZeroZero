@@ -5,7 +5,7 @@ import './footer.css';
   const Footer = (props) => {
   
     return (
-      <div className="footer">
+      <div className="footer footer-hide">
         <div className="footer-item">
           <p className="text">Stay in touch</p>
           <input

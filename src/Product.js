@@ -14,8 +14,8 @@ const Product = (props) => {
         <a href='/' className="navlist">back</a>
        <p>Product</p> */}
        <div className="product">
-       <div className="product-nocontent"></div>
-        <NavLink className="navlink"  to="/productdetails">
+       {/* <div className="product-nocontent"></div> */}
+        <NavLink className="product-navlink"  to="/productdetails">
         <div className="product-container">
         
         <img

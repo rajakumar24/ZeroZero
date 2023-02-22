@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import ProductDetails from '../../ProductDetails';
+import Footer from '../Footer/Footer';
 import './header.css';
 
 const Header = (props) => {
@@ -41,7 +43,7 @@ const Header = (props) => {
            <div className="nav-list">
           <p className="text">CART</p>
           <input
-           className="input"
+           className="input search"
            name="name"
            placeholder="SEARCH"
            style={{marginTop:"-8px"}}
@@ -54,9 +56,179 @@ const Header = (props) => {
       { (window.location.pathname === '/' ) ?
           <></> :
         <div className="shop">
+          <div className="shop-column">
         <NavLink className="navlink"  to={window.location.pathname === '/home' ? "/product" : null}>
         <p className="text">SHOP</p>
         </NavLink>
+        <div className="footer header-footer-hide">
+        <div className="footer-item">
+          <p className="text">Stay in touch</p>
+          <input
+           className="input"
+           name="name"
+           placeholder="ENTER EMAIL"
+          />
+          <p className="text" style={{'padding-bottom':'10px'}}>Subscribe</p>
+         
+        
+          <p className="text">© 2023 ZEROZERO</p>
+          </div>
+          </div>
+          {/* <div className="subscribe">
+          <p className="text">ZERO ZERO</p>
+          <p className="text">© 2023 ZEROZERO</p>
+          </div> */}
+      </div>
+      {/* products list */}
+       {/* <div> */}
+       { window.location.pathname === "/product" ?
+        <div className="product-page">
+    {/* <div className="shop">
+        <NavLink className="navlink"  to={window.location.pathname == '/home' ? "/product" : null}>
+        <p className="text">SHOP</p>
+        </NavLink>
+        </div>
+        <a href='/' className="navlist">back</a>
+       <p>Product</p> */}
+       <div className="product first-row">
+       {/* <div className="product-nocontent"></div> */}
+        <NavLink className="product-navlink"  to="/productdetails">
+        <div className="product-container">
+        
+        <img
+		                    src="./images/img4.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="product-text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        
+                        </div></NavLink>
+                        <NavLink className="navlink"  to="/productdetails">
+                         <div className="product-container">
+                        <img
+		                    src="./images/img4.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="product-text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        </div></NavLink>
+                        <NavLink className="navlink"  to="/productdetails">
+                         <div className="product-container">
+                        <img
+		                    src="./images/img4.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="product-text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        </div></NavLink>
+                         {/* <div className="product-container">
+                         <img
+		                    src="./images/img2.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        </div> */}
+        </div>
+        <div className="product">
+       <div className="product-nocontent"></div>
+        <NavLink className="navlink"  to="/productdetails">
+        <div className="product-container">
+        
+        <img
+		                    src="./images/img4.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="product-text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        
+                        </div></NavLink>
+                        <NavLink className="navlink"  to="/productdetails">
+                         <div className="product-container">
+                        <img
+		                    src="./images/img4.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="product-text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        </div></NavLink>
+                        <NavLink className="navlink"  to="/productdetails">
+                         <div className="product-container">
+                        <img
+		                    src="./images/img4.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="product-text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        </div></NavLink>
+                         {/* <div className="product-container">
+                         <img
+		                    src="./images/img2.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        </div> */}
+        </div>
+        <div className="product">
+       <div className="product-nocontent"></div>
+        <NavLink className="navlink"  to="/productdetails">
+        <div className="product-container">
+        
+        <img
+		                    src="./images/img4.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="product-text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        
+                        </div></NavLink>
+                        <NavLink className="navlink"  to="/productdetails">
+                         <div className="product-container">
+                        <img
+		                    src="./images/img4.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="product-text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        </div></NavLink>
+                        <NavLink className="navlink"  to="/productdetails">
+                         <div className="product-container">
+                        <img
+		                    src="./images/img4.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="product-text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        </div></NavLink>
+                         {/* <div className="product-container">
+                         <img
+		                    src="./images/img2.png"
+		                    className="product-img"
+		                    alt=""
+			            />
+                        <p className="text">LOREM IPSUM DOLOR
+SIT amet</p>
+                        </div> */}
+        </div>
+       </div>
+      : window.location.pathname.includes('/productdetails') ? <ProductDetails/> 
+      : <div className="empty"></div>
+      }
+      <Footer />
+       {/* products list */}
+      
         </div>
         }
       </div>
