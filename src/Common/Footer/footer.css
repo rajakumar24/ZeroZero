@@ -52,6 +52,9 @@ input::placeholder{
   }
 
   @media only screen and (max-width: 600px){
+    .footer {
+      min-height: 25vh;
+    }
     .input {
       height: 18px;
       width: 80px;

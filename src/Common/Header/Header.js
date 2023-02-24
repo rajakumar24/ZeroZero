@@ -226,9 +226,86 @@ SIT amet</p>
       : window.location.pathname.includes('/productdetails') ? <ProductDetails/> 
       : <div className="empty"></div>
       }
-      <Footer />
+      {/* <Footer /> */}
        {/* products list */}
       
+      {/* mobile product start */}
+      { window.location.pathname === "/product" ?
+        <div className="mobile-product-page">
+      <div className="mobile-product first-row">
+        <NavLink className="product-navlink"  to="/productdetails">
+        <div className="product-container">
+            <img
+		          src="./images/img4.png"
+		          className="product-img"
+		          alt=""
+			      />
+            <p className="product-text">LOREM IPSUM DOLOR SIT amet</p>
+        </div>
+        </NavLink>
+        <NavLink className="product-navlink"  to="/productdetails">
+        <div className="product-container">
+            <img
+		          src="./images/img4.png"
+		          className="product-img"
+		          alt=""
+			      />
+            <p className="product-text">LOREM IPSUM DOLOR SIT amet</p>
+        </div>
+        </NavLink>
+      </div>
+
+      <div className="mobile-product first-row">
+        <NavLink className="product-navlink"  to="/productdetails">
+        <div className="product-container">
+            <img
+		          src="./images/img4.png"
+		          className="product-img"
+		          alt=""
+			      />
+            <p className="product-text">LOREM IPSUM DOLOR SIT amet</p>
+        </div>
+        </NavLink>
+        <NavLink className="product-navlink"  to="/productdetails">
+        <div className="product-container">
+            <img
+		          src="./images/img4.png"
+		          className="product-img"
+		          alt=""
+			      />
+            <p className="product-text">LOREM IPSUM DOLOR SIT amet</p>
+        </div>
+        </NavLink>
+      </div>
+
+      <div className="mobile-product first-row">
+        <NavLink className="product-navlink"  to="/productdetails">
+        <div className="product-container">
+            <img
+		          src="./images/img4.png"
+		          className="product-img"
+		          alt=""
+			      />
+            <p className="product-text">LOREM IPSUM DOLOR SIT amet</p>
+        </div>
+        </NavLink>
+        <NavLink className="product-navlink"  to="/productdetails">
+        <div className="product-container">
+            <img
+		          src="./images/img4.png"
+		          className="product-img"
+		          alt=""
+			      />
+            <p className="product-text">LOREM IPSUM DOLOR SIT amet</p>
+        </div>
+        </NavLink>
+      </div>
+        </div>
+      : <></>
+      }
+      <Footer />
+       {/* products list */}
+      {/* mobile product end */}
         </div>
         }
       </div>
