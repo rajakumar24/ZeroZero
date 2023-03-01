@@ -46,7 +46,7 @@ const Header = (props) => {
            className="input search"
            name="name"
            placeholder="SEARCH"
-           style={{marginTop:"-8px"}}
+           style={{marginTop:"-6px"}}
           /> 
           </div>
           </div> 

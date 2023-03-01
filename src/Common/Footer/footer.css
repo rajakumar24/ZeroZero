@@ -62,7 +62,7 @@ input::placeholder{
     }
     .search {
       margin-left: 10px;
-      margin-top: -2px !important;
+      margin-top: -3px !important;
     }
     input::placeholder{
       color: #000000;
