@@ -4,7 +4,6 @@ const ProductDetails = ({count, handleDecrease, handleIncrese, handleCart}) => {
 
   return (
     <div className="productdetails">
-       {/* <a href='/product' className="navlist">back</a> */}
         <img
 		                    src="./images/img4.png"
 		                    className="productdetails-img"

@@ -6,15 +6,7 @@ const Product = (props) => {
 
   return (
     <div className="product-page">
-    {/* <div className="shop">
-        <NavLink className="navlink"  to={window.location.pathname == '/home' ? "/product" : null}>
-        <p className="text">SHOP</p>
-        </NavLink>
-        </div>
-        <a href='/' className="navlist">back</a>
-       <p>Product</p> */}
        <div className="product">
-       {/* <div className="product-nocontent"></div> */}
         <NavLink className="product-navlink"  to="/productdetails">
         <div className="product-container">
         
