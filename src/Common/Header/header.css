@@ -28,18 +28,7 @@
     text-transform: uppercase;
     color: #000000;
   }
-  @media only screen and (max-width: 600px){
-    /* .content {
-      width: 260px;
-    } */
-    .cartSearch {
-      width: 150px;
-      margin-left: 10px;
-    }
-    .header-footer-hide {
-      display: none;
-    }
-  }
+
   .cartSearch {
     width: 280px;
     height: 85px;
@@ -53,6 +42,22 @@
     line-height: 26px; */
     text-transform: uppercase;
     color: #000000;
+  }
+  @media only screen and (max-width: 600px){
+    .content {
+      width: 400px;
+      margin-left: 20px;
+      padding-top: 22px;
+    }
+    .cartSearch {
+      width: 50px;
+      margin-left: 0px;
+      padding-right: 10px;
+      padding-top: 22px;
+    }
+    .header-footer-hide {
+      display: none;
+    }
   }
   .navlink {
     text-decoration: none;

@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import ProductDetails from '../../ProductDetails';
 import Footer from '../Footer/Footer';
 import './header.css';
 
 const Header = (props) => {
+
+  const [count, setCount] = useState(1);
+  const [cart, setCart] = useState(null);
+
+  const handleCart = () => {
+    //event.preventdeafult();
+    setCart(count);
+   }
+
+  const handleDecrease = () => {
+   //event.preventdeafult();
+   if(count === 1)
+   {
+    setCount(1);
+   } else {
+    setCount(count - 1);
+   }
+  }
+
+  const handleIncrese = () => {
+    //event.preventdeafult();
+     setCount(count + 1);
+   }
   
     return (
       <div className="headers">
@@ -41,7 +64,7 @@ const Header = (props) => {
           <></> :
           <div className="cartSearch">
            <div className="nav-list">
-          <p className="text">CART</p>
+          <p className="text">CART {cart}</p>
           <input
            className="input search"
            name="name"
@@ -223,7 +246,13 @@ SIT amet</p>
                         </div> */}
         </div>
        </div>
-      : window.location.pathname.includes('/productdetails') ? <ProductDetails/> 
+      : window.location.pathname.includes('/productdetails') ? 
+      <ProductDetails 
+       count={count}
+       handleDecrease={handleDecrease}
+       handleIncrese={handleIncrese}
+       handleCart={handleCart}
+      /> 
       : <div className="empty"></div>
       }
       {/* <Footer /> */}

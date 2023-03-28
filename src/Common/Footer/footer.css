@@ -63,6 +63,7 @@ input::placeholder{
     .search {
       margin-left: 10px;
       margin-top: -2px !important;
+      display: none;
     }
     input::placeholder{
       color: #000000;
