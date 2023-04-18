@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import ProductDetails from '../../ProductDetails';
 import Footer from '../Footer/Footer';
 import './header.css';
 
 const Header = (props) => {
-
+  const history = useNavigate();
   const [count, setCount] = useState(1);
   const [cart, setCart] = useState(null);
 
@@ -28,10 +28,19 @@ const Header = (props) => {
     //event.preventdeafult();
      setCount(count + 1);
    }
+
+   useEffect(() => {
+    if(window.location.pathname === '/')
+    {
+      setTimeout(() => {
+        history('/home')
+      }, 3000);
+    }
+   }, []);
   
     return (
       <div className="headers">
-      <div className={window.location.pathname === '/' ? "opening" : "other"}>
+      <div className={window.location.pathname === '/' ? "opening   " : "other"}>
           {/* <div className="nav">
           <p>ZEROZERO</p> */}
           {/* <div className="nav-list">

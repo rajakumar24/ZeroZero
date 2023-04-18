@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Product = (props) => {
-  //const 
 
   return (
     <div className="product-page">
@@ -11,12 +10,11 @@ const Product = (props) => {
         <div className="product-container">
         
         <img
-		                    src="./images/img4.png"
-		                    className="product-img"
-		                    alt=""
-			            />
-                        <p className="product-text">LOREM IPSUM DOLOR
-SIT amet</p>
+		      src="./images/img4.png"
+		      className="product-img"
+		      alt=""
+			  />
+        <p className="product-text">LOREM IPSUM DOLOR SIT amet</p>
                         
                         </div></NavLink>
                         <NavLink className="navlink"  to="/productdetails">
