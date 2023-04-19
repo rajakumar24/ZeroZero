@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import './header.css';
 
 const Header = (props) => {
-  const history = useNavigate();
+  const navigate = useNavigate();
   const [count, setCount] = useState(1);
   const [cart, setCart] = useState(null);
 
@@ -33,7 +33,7 @@ const Header = (props) => {
     if(window.location.pathname === '/')
     {
       setTimeout(() => {
-        history('/home')
+        navigate('/home')
       }, 3000);
     }
    }, []);
