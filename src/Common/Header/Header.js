@@ -36,7 +36,7 @@ const Header = (props) => {
         navigate('/home')
       }, 3000);
     }
-   }, []);
+   }, [navigate]);
   
     return (
       <div className="headers">
